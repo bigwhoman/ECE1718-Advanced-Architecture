@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "MIPS Run",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/usr/bin/spim",
+            "args": ["-f", "${file}"],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true
+        }
+    ]
+ }
