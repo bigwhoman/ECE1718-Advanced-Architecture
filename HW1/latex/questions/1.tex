@@ -1,0 +1,18 @@
+\smalltitle{Question 1}
+
+\begin{enumerate}
+    \item The key challenge is that previous cache side-channel attacks relied on 
+    L1 cache which is practically small to probe and also infeaseble due to each core having its own 
+    distinguished L1 cache in an environment like the cloud but the last level cache is 
+    shared across all cores but it is slower in terms of access time which make previous approaches ineffective.\\
+    The goal is to actually develop an effective side-channel attack across virtual machines on the cloud which relies on the shared last level cache between 
+    these virtual machines regardless of special conditions like shared memory or VMM level vulnerabilities.
+
+    \item Acording to the \textbf{CEASER} paper: \begin{quote}
+        the group of lines that
+map to the same set of the cache and can cause an eviction is
+called an Eviction Set
+    \end{quote}
+    This basically means that eviction set is the collection of memory segments that when brought to the cache, would 
+    replace a certain line and throw out whatever is in that line (flush that line of cache)
+\end{enumerate}
